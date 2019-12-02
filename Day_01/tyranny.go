@@ -58,5 +58,5 @@ func readMassesFromFile(fn string) ([]int, error) {
 func main() {
 	masses, _ := readMassesFromFile("/Users/seanslattery/dev/AoC_2019/Day_01/test.txt")
 	total := totalFuelRequired(masses)
-	fmt.Printf("The total amount of fuel required is: %d\n", total)
+	fmt.Printf("The total amount of fuel required for part I is: %d\n", total)
 }

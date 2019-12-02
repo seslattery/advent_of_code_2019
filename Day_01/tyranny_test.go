@@ -47,3 +47,18 @@ func TestTotalFuelRequired(t *testing.T) {
 		assertCorrectMessage(t, got, want)
 	})
 }
+
+func TestTotalFuelRequiredPart2(t *testing.T) {
+	assertCorrectMessage := func(t *testing.T, got, want int) {
+		t.Helper()
+		if got != want {
+			t.Errorf("got %d want %d", got, want)
+		}
+	}
+	t.Run("Multiple Mass Part II: 12, 14", func(t *testing.T) {
+		masses := []int{12, 14}
+		got := totalFuelRequiredPart2(masses)
+		want := 4
+		assertCorrectMessage(t, got, want)
+	})
+}
